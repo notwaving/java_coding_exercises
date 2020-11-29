@@ -12,8 +12,10 @@ public class Exercise001 {
     }
 
     public double addVat(double originalPrice, double vatRate) {
-        // Add your code here
-        return 0.0;
+        // This is how you calculate the answer
+        double vatToAdd = (originalPrice * (vatRate / 100)) + originalPrice;
+        // Returns answers of up to two decimal places
+        return Math.round(vatToAdd * 100.0) / 100.0;
     }
 
     public String reverse(String sentence) {
