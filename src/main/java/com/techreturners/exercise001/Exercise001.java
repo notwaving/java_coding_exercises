@@ -23,7 +23,13 @@ public class Exercise001 {
     }
 
     public int countLinuxUsers(List<User> users) {
-        // Add your code here
-        return 0;
+        int totalLinuxUsers = 0;
+
+        for (int i = 0; i < users.size(); i++) {
+            if (User.get(2) == "Linux"){
+                totalLinuxUsers ++;
+            }
+        }
+          return totalLinuxUsers;
     }
 }
