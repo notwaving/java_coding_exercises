@@ -5,7 +5,7 @@ import static org.junit.Assert.assertEquals;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.junit.Ignore;
+// import org.junit.Ignore;
 import org.junit.Test;
 
 public class Exercise001Test {
@@ -56,17 +56,16 @@ public class Exercise001Test {
         User u3 = new User("Sheila", "CentOS 7", "Linux");
         User u4 = new User("Pedro", "Ubuntu 18.04", "Linux");
 
-
         List<User> users = new ArrayList<User>();
         users.add(u1);
         users.add(u2);
         assertEquals(0, ex001.countLinuxUsers(users));
 
-        // users = new ArrayList<User>();
-        // users.add(u1);
-        // users.add(u2);
-        // users.add(u3);
-        // users.add(u4);
-        // assertEquals(2, ex001.countLinuxUsers(users));
+        users = new ArrayList<User>();
+        users.add(u1);
+        users.add(u2);
+        users.add(u3);
+        users.add(u4);
+        assertEquals(2, ex001.countLinuxUsers(users));
     }
 }

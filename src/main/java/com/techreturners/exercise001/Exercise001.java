@@ -25,11 +25,14 @@ public class Exercise001 {
     public int countLinuxUsers(List<User> users) {
         int totalLinuxUsers = 0;
 
-        for (int i = 0; i < users.size(); i++) {
-            if (User.get(2) == "Linux"){
-                totalLinuxUsers ++;
+        // Refactor further with the equivalent of JavaScript filter?
+
+        for (User user : users) {
+            if (user.getType().equals("Linux")) {
+                totalLinuxUsers++;
             }
         }
-          return totalLinuxUsers;
+        return totalLinuxUsers;
+
     }
 }
